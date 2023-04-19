@@ -7,8 +7,6 @@
     <title>Document</title>
   </head>
   <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-
     <script>
       //1. 전체 url가져오기
       const currentURL = location.href;
@@ -21,7 +19,7 @@
 
       console.log(id);
 
-      const movieURL = `https://api.themoviedb.org/3/person/${id}?api_key=982ae81859ec91d54685c660abf01049&language=ko-KR`;
+      const personURL = `https://api.themoviedb.org/3/person/${id}?api_key=982ae81859ec91d54685c660abf01049&language=ko-KR`;
       $.ajax({
         type: "GET",
         url: personURL,
@@ -37,5 +35,6 @@
         },
       });
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   </body>
 </html>
